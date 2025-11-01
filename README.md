@@ -1,6 +1,6 @@
 The site includes:
 - Responsive navigation (three-line hamburger menu)
-- Pages for Projects, About, Collaborations, and Connect
+- Pages for Index ,Projects, About, Collaborations, and Connect
 - Loader animation and consistent header/footer across pages
 - Semantic HTML elements for accessibility compliance (e.g., `<nav>`, `<dl>`, `<main>`)
 
