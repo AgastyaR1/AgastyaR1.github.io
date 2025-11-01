@@ -779,7 +779,8 @@ main {
         margin-top: 0;
         animation: textAnimation 1s infinite; } }
   .price__buy:hover {
-    animation: buttonAnimate 1s infinite,  textAnimation 1s infinite; }
+    animation: buttonAnimate 1s infinite, 
+ textAnimation 1s infinite; }
   .price__refund {
     margin-top: 5rem;
     color: #3F555F; }
@@ -1049,3 +1050,70 @@ main {
 .center {
   width: 90%;
   margin: 0 auto; }
+/* Accessibility & Contrast Fixes */
+body {
+  color: #f9f9f9;
+  background-color: #0A0908;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #2b3a40;
+  color: #ffffff;
+}
+
+.navigation__link:link,
+.navigation__link:visited,
+.blogs__caption {
+  color: #ffffff !important;
+}
+
+.navigation__link:hover {
+  color: #d9d9d9 !important;
+}
+
+.heading-primary::before,
+.about-section .heading-primary::before,
+.contact-section .heading-primary::before,
+.content-1 .heading-primary::before,
+.content-2 .heading-primary::before,
+.content-3 .heading-primary::before,
+.content-4 .heading-primary::before,
+.content-5 .heading-primary::before,
+.content-6 .heading-primary::before {
+  color: #cccccc !important;
+}
+
+.blogs__polaroid {
+  background-color: #eaeaea;
+}
+
+.blogs__caption {
+  color: #111111 !important;
+}
+
+.blogs__info figcaption {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.contact__input {
+  color: #222222;
+  background-color: #ffffff;
+}
+
+.contact__btn {
+  background-color: #1f333b;
+  color: #ffffff;
+}
+
+.loader-wrapper__text {
+  color: #ffffff;
+}
