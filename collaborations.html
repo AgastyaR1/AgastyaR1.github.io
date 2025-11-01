@@ -2,75 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Collaborators – Agastya Rathee</title>
-  <meta name="description" content="A gallery of ongoing and completed projects by Agastya Rathee.">
+  <title>Collaborations – Agastya Rathee</title>
+  <meta name="description" content="People I’ve worked with and what we shipped together.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/logo.png" type="image/png">
+
+  
+  <style>
+  
+    .brand {
+      position: fixed;
+      left: 2.5rem;
+      top: 2.5rem;
+      z-index: 1006;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      text-decoration: none;
+    }
+    .brand img { width: 3.6rem; height: 3.6rem; display: block; }
+    .brand span { font-size: 1.6rem; color: #F2F4F3; font-weight: 400; letter-spacing: .04em; }
+
+    /* full-screen menu starts hidden and non-interactive */
+    .navigation__list {
+      width: 0;
+      overflow: hidden;
+      pointer-events: none;
+      background: transparent;
+    }
+    /* when nav is active, show a solid background and enable clicks */
+    .navigation.active .navigation__list {
+      width: 100vw;
+      pointer-events: auto;
+      background: rgba(10,9,8,0.97);
+    }
+    /* fade in links when active */
+    .navigation.active .navigation__link,
+    .navigation.active .media__link {
+      opacity: 1 !important;
+    }
+    /* keep hamburger on top */
+    .navigation__display { z-index: 1006; }
+  </style>
 </head>
 
 <body>
-  <div class="navigation">
-    <div class="navigation__display">
+  
+  <a class="brand" href="index.html" aria-label="Go to Home">
+    <img src="img/logo.png" alt="Agastya logo">
+    <span>Agastya</span>
+  </a>
+
+  <!-- Overlay navigation -->
+  <nav class="navigation" role="navigation" aria-label="Primary">
+    <button class="navigation__display" type="button" aria-expanded="false" aria-controls="primary-menu">
       <div class="navigation__line"></div>
-    </div>
-    <div class="navigation__container"></div>
-    <ul class="navigation__list">
-      <a href="index.html" class="navigation__link">
-        <li class="navigation__item">Home</li>
-      </a>
-      <a href="blogmain.html" class="navigation__link">
-        <li class="navigation__item">Projects</li>
-      </a>
-      <a href="about.html" class="navigation__link">
-        <li class="navigation__item">About</li>
-      </a>
-      <a href="collaborations.html" class="navigation__link">
-        <li class="navigation__item">Collaborations</li>
-      </a>
-      <a href="contact.html" class="navigation__link">
-        <li class="navigation__item">Connect</li>
-      </a>
-      
+    </button>
+    <div class="navigation__container" aria-hidden="true"></div>
+
+    <ul id="primary-menu" class="navigation__list">
+      <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+      <li class="navigation__item"><a href="blogmain.html" class="navigation__link">Projects</a></li>
+      <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
+      <li class="navigation__item"><a href="collaborations.html" class="navigation__link" aria-current="page">Collaborations</a></li>
+      <li class="navigation__item"><a href="contact.html" class="navigation__link">Connect</a></li>
     </ul>
-  </div>
+  </nav>
 
   <main>
     <h1 class="heading-primary">Collaborators</h1>
-    <p class="caption">People I’ve worked with on coursework, hackathons, and side projects.</p>
+    <p class="caption" style="opacity:1;margin-left:5rem;color:#F2F4F3;">
+      Folks I’ve worked with on coursework, hackathons, and side projects.
+    </p>
 
-    <section class="content" style="max-width:920px;margin:2rem auto;">
-      <h2 class="heading-secondary">Directory</h2>
+    <section class="content" style="max-width:920px;margin:3rem auto;">
+      <h2 class="heading-secondary" style="background-image:none;color:#0A0908;text-transform:none;font-weight:400;">
+        Directory
+      </h2>
+      <dl class="blog__text" style="font-size:1.6rem;line-height:2.4rem;color:#4a4a4a;margin-left:5rem;">
+        <dt style="font-weight:700;color:#0A0908;">Alex Chen</dt>
+        <dd>Backend &amp; APIs — <a href="mailto:alex@example.com">alex@elh.com</a></dd>
 
-      <!-- Description list satisfies the rubric -->
-      <dl class="blog__text">
-        <dt>Alex Chen</dt>
-        <dd>Backend & APIs — <a href="mailto:alex@example.com">alex@gmsil.com</a></dd>
+        <dt style="font-weight:700;color:#0A0908;">Priya Shah</dt>
+        <dd>Data Science &amp; Visualization — <a href="mailto:pshah@example.com">pshah@jg.com</a></dd>
 
-        <dt>Priya Shah</dt>
-        <dd>Data Science & Visualization — <a href="mailto:pshah@example.com">pshah@rao.com</a></dd>
+        <dt style="font-weight:700;color:#0A0908;">Diego Ramirez</dt>
+        <dd>Android &amp; React Native — <a href="mailto:diego@example.com">diego@gmail.com</a></dd>
 
-        <dt>Diego Ramirez</dt>
-        <dd>Android & React Native — <a href="mailto:diego@example.com">diego@cje.com</a></dd>
-
-        <dt>Sofia Nguyen</dt>
-        <dd>ML Ops & Deployment — <a href="mailto:sofia@example.com">sofia@eple.com</a></dd>
+        <dt style="font-weight:700;color:#0A0908;">Sofia Nguyen</dt>
+        <dd>ML Ops &amp; Deployment — <a href="mailto:sofia@example.com">sofia@robin.com</a></dd>
       </dl>
-
-      <h3 class="heading-tertiary">Highlights</h3>
-      <ul class="blog__text">
-        <li>Shipped a GPU inference demo with dynamic batching.</li>
-        <li>Built an R Shiny explorer for city data.</li>
-        <li>Prototyped an outfit recommender in React Native.</li>
-      </ul>
-
-      <p class="blog__text">
-        Markup pattern based on 
-        <a href="https://developer.mozilla.org/docs/Web/HTML/Element/dl" target="_blank" rel="noopener">
-          MDN’s description list guide
-        </a>.
-      </p>
     </section>
   </main>
 
@@ -78,5 +101,28 @@
     <h4 class="footer__head">DISCLAIMER</h4>
     <p class="footer__text">This is a dummy portfolio, only meant for academic purposes.</p>
   </footer>
+
+  <script>
+    (function () {
+      const nav = document.querySelector('.navigation');
+      const btn = document.querySelector('.navigation__display');
+      const links = document.querySelectorAll('.navigation__link');
+
+      function openNav() {
+        nav.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+      function closeNav() {
+        nav.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+      function toggleNav() {
+        if (nav.classList.contains('active')) closeNav(); else openNav();
+      }
+
+      btn.addEventListener('click', toggleNav);
+      links.forEach(a => a.addEventListener('click', closeNav));
+    }());
+  </script>
 </body>
 </html>
