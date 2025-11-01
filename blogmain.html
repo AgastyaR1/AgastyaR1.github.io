@@ -2,98 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Projects — Agastya Rathee</title>
-  <meta name="description" content="A gallery of sample projects by Agastya Rathee.">
+  <title>Projects – Agastya Rathee</title>
+  <meta name="description" content="A gallery of ongoing and completed projects by Agastya Rathee.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/logo.png" type="image/png">
 </head>
-<body>
-  <header class="header">
-    <a href="index.html" class="home-link">
-      <img src="img/logo.png" alt="Agastya Rathee logo" class="header__logo">
-    </a>
-    <h4 class="header__side-text">Agastya Rathee</h4>
-  </header>
 
-  <!-- Accessible and consistent navigation -->
-  <nav class="navigation" role="navigation" aria-label="Primary">
+<body>
+  <div class="navigation">
+    <div class="navigation__display">
+      <div class="navigation__line"></div>
+    </div>
+    <div class="navigation__container"></div>
     <ul class="navigation__list">
-      <li class="navigation__item"><a class="navigation__link" href="index.html">Home</a></li>
-      <li class="navigation__item"><a class="navigation__link" href="projects.html" aria-current="page">Projects</a></li>
-      <li class="navigation__item"><a class="navigation__link" href="about.html">About</a></li>
-      <li class="navigation__item"><a class="navigation__link" href="contact.html">Connect</a></li>
+      <a href="index.html" class="navigation__link">
+        <li class="navigation__item">Home</li>
+      </a>
+      <a href="blogmain.html" class="navigation__link">
+        <li class="navigation__item">Projects</li>
+      </a>
+      <a href="about.html" class="navigation__link">
+        <li class="navigation__item">About</li>
+      </a>
+      <a href="collaborations.html" class="navigation__link">
+        <li class="navigation__item">Collaborations</li>
+      </a>
+      <a href="contact.html" class="navigation__link">
+        <li class="navigation__item">Connect</li>
+      </a>
+      <div class="media">
+        <li class="media__item">
+          <a href="https://www.facebook.com" class="media__link">
+            <svg class="media__icon"><use xlink:href="img/sprite.svg#icon-facebook2"></use></svg>
+          </a>
+          <a href="https://www.instagram.com" class="media__link">
+            <svg class="media__icon"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+          </a>
+          <a href="https://www.twitter.com" class="media__link">
+            <svg class="media__icon"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+          </a>
+          <a href="https://www.pinterest.com" class="media__link">
+            <svg class="media__icon"><use xlink:href="img/sprite.svg#icon-pinterest"></use></svg>
+          </a>
+        </li>
+      </div>
     </ul>
-  </nav>
+  </div>
 
   <main>
     <h1 class="heading-primary">Projects</h1>
 
     <div class="blog-center">
       <div class="blogs">
-
         <div class="blogs__polaroid">
           <figure class="blogs__info">
             <img src="img/card back 1.jpg" alt="Project visual 1" class="blogs__img">
-            <figcaption class="blogs__caption">The seas, unexplored</figcaption>
+            <figcaption class="blogs__caption">Project in Development</figcaption>
           </figure>
         </div>
 
         <div class="blogs__polaroid" style="animation-delay:.2s;">
           <figure class="blogs__info">
-            <img src="img/card back 3.jpg" alt="Project visual 2" class="blogs__img">
-            <figcaption class="blogs__caption">Into the unknown</figcaption>
+            <img src="img/card back 2.jpg" alt="Project visual 2" class="blogs__img">
+            <figcaption class="blogs__caption">Project in Development</figcaption>
           </figure>
         </div>
 
         <div class="blogs__polaroid" style="animation-delay:.5s;">
           <figure class="blogs__info">
-            <img src="img/card back 2.jpg" alt="Project visual 3" class="blogs__img">
-            <figcaption class="blogs__caption">Modern Aesthetics</figcaption>
+            <img src="img/card back 3.jpg" alt="Project visual 3" class="blogs__img">
+            <figcaption class="blogs__caption">Project in Development</figcaption>
           </figure>
         </div>
 
         <div class="blogs__polaroid" style="animation-delay:1s;">
           <figure class="blogs__info">
             <img src="img/card back 4.jpg" alt="Project visual 4" class="blogs__img">
-            <figcaption class="blogs__caption">Rediscover</figcaption>
+            <figcaption class="blogs__caption">Project in Development</figcaption>
           </figure>
         </div>
 
         <div class="blogs__polaroid" style="animation-delay:.4s;">
           <figure class="blogs__info">
             <img src="img/card back 5.jpg" alt="Project visual 5" class="blogs__img">
-            <figcaption class="blogs__caption">Food is Luv</figcaption>
+            <figcaption class="blogs__caption">Project in Development</figcaption>
           </figure>
         </div>
 
         <div class="blogs__polaroid" style="animation-delay:.7s;">
           <figure class="blogs__info">
             <img src="img/card back 6.jpg" alt="Project visual 6" class="blogs__img">
-            <figcaption class="blogs__caption">Beauty Redefined</figcaption>
+            <figcaption class="blogs__caption">Project in Development</figcaption>
           </figure>
         </div>
-
       </div>
     </div>
   </main>
-  
+
   <footer class="footer">
     <h4 class="footer__head">DISCLAIMER</h4>
-    <p class="footer__text">
-      This is a dummy portfolio created for academic purposes only.
-    </p>
-    <p class="footer__text">
-      All images are placeholders, and no commercial use is intended.
-    </p>
+    <p class="footer__text">This is a dummy portfolio made for academic purposes only. All visuals are placeholders and not for commercial use.</p>
   </footer>
 
-  <!-- Hidden decorative loader -->
-  <div class="loader-wrapper" aria-hidden="true">
+  <div class="loader-wrapper">
     <figure class="loader-wrapper__loader">
-      <img src="img/loading animation.svg" alt="" class="loader-wrapper__animation">
-      <figcaption class="loader-wrapper__text">Loading...</figcaption>
+      <img src="img/loading animation.svg" alt="loader" class="loader-wrapper__animation">
+      <figcaption class="loader-wrapper__text">Please Wait, Loading</figcaption>
     </figure>
   </div>
 
